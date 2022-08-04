@@ -31,9 +31,12 @@ export default function EventContainer({ eventData }) {
                 <img className='eventImage' src={image} alt={name} />
                 <div className='eventInfo'>
                     <div className='eventGenre' > {genre} </div>
-                    <div>{event.name} </div>
-                    <div className='dateTime'> {date} </div>
+                    <div className= 'eventName' >{event.name} </div>
+                    <div className='eventDate'> {date} </div>
+                    <div className= 'eventLocation'> 
+                    <img src="https://img.icons8.com/offices/480/000000/marker.png"/>
                     <div className="location"> {location} </div>
+                    </div>
                 </div>
 
             </div>

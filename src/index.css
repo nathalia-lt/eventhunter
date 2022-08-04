@@ -61,6 +61,26 @@
   margin-top: 5%;
 }
 
+.eventName {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.eventDate {
+  color: orange;
+}
+
+.eventLocation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.eventLocation img {
+  height: 17px;
+  filter: grayscale(100%);
+  margin-right: 1.5%;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
 }/*# sourceMappingURL=index.css.map */
