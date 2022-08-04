@@ -43,4 +43,24 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.eventGenre {
+  background-color: silver;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.eventInfo {
+  margin-left: 7%;
+  margin-top: 5%;
+  margin-right: 7%;
+}
+.eventInfo div {
+  margin-top: 5%;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
 }/*# sourceMappingURL=index.css.map */
