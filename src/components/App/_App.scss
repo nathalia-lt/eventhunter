@@ -1,7 +1,20 @@
+
+@use '../../styles';
+
+
 .test{
+    background-color: styles.$primary;
     font-size: 18vh;
     &:hover{
         cursor: pointer;
     }
 }
 
+.row-1 {
+    @include styles.flexCenter(row);
+}
+
+.col-1 {
+    @include styles.flexCenter(column);
+    color: white;
+}

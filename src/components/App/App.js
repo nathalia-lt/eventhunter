@@ -25,7 +25,18 @@ let [eventData, setEventData] = useState([])
     <div>festinha</div>
     <Routes>
       <Route path='/info' element={
-        <div>information</div>
+        <div className='row-1'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+      } />
+      <Route path='/edit' element={
+        <div className='col-1'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
       } />
       <Route path='/' element={
         <div className='test' > test</div>
