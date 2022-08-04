@@ -1,3 +1,18 @@
+@use '../../styles' as s;
+
 .eventImage{
-    height: 10vh;
+    height: 150px;
+    width: inherit;
+}
+
+.eventCard{
+    background-color: s.$primary;
+    color: white;
+    width: 275px;
+    height: 400px;
+}
+
+.eventContainer{
+    @include s.flexCenter(row);
+    flex-wrap: wrap;
 }

@@ -28,11 +28,11 @@ export default function EventContainer( {eventData} ){
     return(
         <div className='eventContainer'>
             <div className='eventCard' >
-                <div>{event.name} </div>
                 <img className= 'eventImage' src={image} alt={name} />
+                <div>{event.name} </div>
                 <div className= 'dateTime'> {date} </div>
                 <div className= "location"> {location} </div>
-                <div classname= 'genre' > {genre} </div>
+                <div className= 'genre' > {genre} </div>
 
             </div>
 
