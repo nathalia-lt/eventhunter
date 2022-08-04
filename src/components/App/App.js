@@ -1,5 +1,4 @@
 import { Route, Routes} from 'react-router-dom';
-import './App.css';
 import key from '../../key';
 //even though we write everything on the scss file we still import the css file
 import  React, {useEffect, useState} from 'react';
@@ -26,14 +25,14 @@ let [eventData, setEventData] = useState([])
     <div>festinha</div>
     <Routes>
       <Route path='/info' element={
-        <div>informations</div>
+        <div>information</div>
       } />
       <Route path='/' element={
-        <div>test</div>
+        <div className='test' > test</div>
       } />
       <Route path='/*' element={
         // the * will display the especifico elemento for all none especifico path
-        <div>Home</div>
+        <div className='home'>Home</div>
       } />
     </Routes>
     </div>
