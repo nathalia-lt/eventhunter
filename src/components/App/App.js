@@ -3,6 +3,7 @@ import key from '../../key';
 //even though we write everything on the scss file we still import the css file
 import  React, {useEffect, useState} from 'react';
 import axios from 'axios'
+import Home from '../Home/Home';
 
 
 function App() {
@@ -22,11 +23,15 @@ let [eventData, setEventData] = useState([])
   return (
   <div> 
     {/* anything we put up here will display in all the pages no matter what. The same thing apply below the routes as well */}
-    <div>festinha</div>
+    
     <Routes>
-      
+      <Route path='/' element={
+        <Home 
+        />
+      }
+      />
     </Routes>
-      <div>footer</div>
+    
     </div>
 
   );
