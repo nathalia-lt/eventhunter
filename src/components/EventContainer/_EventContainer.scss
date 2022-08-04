@@ -1,0 +1,52 @@
+@use '../../styles' as s;
+
+.eventImage{
+    height: 150px;
+    width: inherit;
+}
+
+.eventCard{
+    background-color: s.$primary;
+    color: white;
+    width: 275px;
+    height: 400px;
+}
+
+.eventContainer{
+    @include s.flexCenter(row);
+    flex-wrap: wrap;
+}
+
+.eventGenre{
+    background-color: silver;
+    width: fit-content;
+}
+
+.eventInfo{
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-right: 7%;
+    div{ //here I am applying margin top to all divs that come after the div of a className eventInfo
+        margin-top: 5%;
+    }
+}
+
+.eventName{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.eventDate{
+    color: orange
+}
+
+.eventLocation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+        height: 17px;
+        filter: grayscale(100%);
+        margin-right: 1.5%;
+    }
+}
