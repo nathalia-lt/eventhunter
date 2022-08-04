@@ -1,7 +1,11 @@
-
+import EventContainer from '../EventContainer/EventContainer'
 
 export default function Home( {eventData} ){
     return(
-        <div className="home" > hey there</div>
+        <div> 
+            <EventContainer
+            eventData={eventData}
+        /> 
+        </div>
     )
 }
