@@ -24,28 +24,9 @@ let [eventData, setEventData] = useState([])
     {/* anything we put up here will display in all the pages no matter what. The same thing apply below the routes as well */}
     <div>festinha</div>
     <Routes>
-      <Route path='/info' element={
-        <div className='row-1'>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-        </div>
-      } />
-      <Route path='/edit' element={
-        <div className='col-1'>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-        </div>
-      } />
-      <Route path='/' element={
-        <div className='test' > test</div>
-      } />
-      <Route path='/*' element={
-        // the * will display the especifico elemento for all none especifico path
-        <div className='home'>Home</div>
-      } />
+      
     </Routes>
+      <div>footer</div>
     </div>
 
   );
