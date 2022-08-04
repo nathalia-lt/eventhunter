@@ -27,6 +27,7 @@ let [eventData, setEventData] = useState([])
     <Routes>
       <Route path='/' element={
         <Home 
+        eventData={eventData}
         />
       }
       />
