@@ -41,7 +41,7 @@
     margin-top: 5%;
     margin-right: 7%;
     div{ //here I am applying margin top to all divs that come after the div of a className eventInfo
-        margin-top: 8%;
+        margin-top: 6%;
     }
 }
 
@@ -66,5 +66,24 @@
     }
     div {
         margin-bottom: 5%;
+    }
+}
+
+.eventButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.eventButton{
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    font-size: 15px;
+    &:hover{
+        cursor: pointer;
+        font-size: 16px;
+    }
+    &:active{
+        font-size: 14px;
     }
 }

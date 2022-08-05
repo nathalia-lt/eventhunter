@@ -37,7 +37,12 @@ export default function EventCard( {event} ){
 
 let genreClass = 'eventGenre ' + genre.toLowerCase()
 
+//------------------------------------------------
+//button
 
+function HandleButtonClick(){
+    
+}
 
 
 
@@ -53,6 +58,9 @@ let genreClass = 'eventGenre ' + genre.toLowerCase()
                     <img src='https://img.icons8.com/ios/50/000000/marker--v1.png' />
                     {/* <img src="https://img.icons8.com/offices/480/000000/marker.png"/> */}
                     <div className="location"> {location} </div>
+                    </div>
+                    <div className= 'eventButtonContainer'>    
+                    <button className='eventButton'> Info </button>
                     </div>
                 </div>
 
