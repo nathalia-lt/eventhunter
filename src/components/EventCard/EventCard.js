@@ -14,7 +14,7 @@ export default function EventCard( {event} ){
     let location = city + ', ' + state
     //console.log(location)
     let venue = event._embedded.venues.name
-    let genre = event.classifications[0].segment.name
+    let genre = event.classifications[0].segment.name.toUpperCase()
     // console.log(genre)
 
 
@@ -49,8 +49,9 @@ let genreClass = 'eventGenre ' + genre.toLowerCase()
                     <div className={genreClass} > {genre} </div>
                     <div className= 'eventName' >{event.name} </div>
                     <div className='eventDate'> {day + ', ' + completeTime} </div>
-                    <div className= 'eventLocation'> 
-                    <img src="https://img.icons8.com/offices/480/000000/marker.png"/>
+                    <div className= 'eventLocation'>
+                    <img src='https://img.icons8.com/ios/50/000000/marker--v1.png' />
+                    {/* <img src="https://img.icons8.com/offices/480/000000/marker.png"/> */}
                     <div className="location"> {location} </div>
                     </div>
                 </div>

@@ -1,17 +1,21 @@
 @use '../../styles' as s;
 
 
+
 .eventImage{
     height: 150px;
     width: inherit;
+    border-top-left-radius: s.$radius;
+    border-top-right-radius: s.$radius;
 }
 
 .eventCard{
     background-color: s.$primary;
-    color: white;
+    color: s.$text;
     width: 275px;
     height: 400px;
     margin: 18px;
+    border-radius: s.$radius;
 }
 
 
@@ -20,7 +24,7 @@
     width: fit-content;
     padding: 5px 5px 4px 6px;  //top, right, bottom, left
     border-radius: 2px; 
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .music{
@@ -32,19 +36,19 @@
 }
 
 
-
 .eventInfo{
     margin-left: 7%;
     margin-top: 5%;
     margin-right: 7%;
     div{ //here I am applying margin top to all divs that come after the div of a className eventInfo
-        margin-top: 5%;
+        margin-top: 8%;
     }
 }
 
 .eventName{
     font-size: 20px;
     font-weight: bolder;
+    font-weight: 700;
 }
 
 .eventDate{
@@ -59,5 +63,8 @@
         height: 17px;
         filter: grayscale(100%);
         margin-right: 1.5%;
+    }
+    div {
+        margin-bottom: 5%;
     }
 }
