@@ -25,6 +25,14 @@
   color: blue;
 }
 
+.eventContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .eventImage {
   height: 150px;
   width: inherit;
@@ -35,14 +43,7 @@
   color: white;
   width: 275px;
   height: 400px;
-}
-
-.eventContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 18px;
 }
 
 .eventGenre {

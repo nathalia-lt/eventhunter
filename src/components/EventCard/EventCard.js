@@ -18,6 +18,20 @@ export default function EventCard( {event} ){
     // console.log(genre)
 
 
+    let dateTime = new Date(date)
+    let day = dateTime.toDateString() // it turns the time like: Fri, Aug 05 2022
+    //let time = dateTime.toLocaleTimeString() // it turns the time of your computer for ex if it is pm am or military time
+    let time = dateTime.toLocaleTimeString().split(':')
+    //console.log( time)
+
+    //Military vs AM PM
+
+    let completeTime = time.slice(0, 2).join(':')
+    if (time[2].includes('AM') || time[2].includes('PM')){ //account for military time vs non 
+        completeTime  += ' ' + time[2].split(' ')[1]
+    }
+
+
     return(
         <div>
             <div className='eventCard' >
@@ -25,7 +39,7 @@ export default function EventCard( {event} ){
                 <div className='eventInfo'>
                     <div className='eventGenre' > {genre} </div>
                     <div className= 'eventName' >{event.name} </div>
-                    <div className='eventDate'> {date} </div>
+                    <div className='eventDate'> {day + ' ' + completeTime} </div>
                     <div className= 'eventLocation'> 
                     <img src="https://img.icons8.com/offices/480/000000/marker.png"/>
                     <div className="location"> {location} </div>
