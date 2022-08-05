@@ -18,7 +18,20 @@
 .eventGenre{
     background-color: silver;
     width: fit-content;
+    padding: 5px 5px 4px 6px;  //top, right, bottom, left
+    border-radius: 2px; 
+    font-size: 14px;
 }
+
+.music{
+    background-color: s.$music;
+}
+
+.sports{
+    background-color: s.$sports;
+}
+
+
 
 .eventInfo{
     margin-left: 7%;

@@ -19,7 +19,9 @@ export default function EventCard( {event} ){
 
 
     let dateTime = new Date(date)
-    let day = dateTime.toDateString() // it turns the time like: Fri, Aug 05 2022
+    let day = dateTime.toDateString().slice(0,10).split('') // it turns the time like: Fri, Aug 05 2022 e colocando virgulas
+    day.splice(3,0,',')
+    day = day.join('')
     //let time = dateTime.toLocaleTimeString() // it turns the time of your computer for ex if it is pm am or military time
     let time = dateTime.toLocaleTimeString().split(':')
     //console.log( time)
@@ -30,6 +32,13 @@ export default function EventCard( {event} ){
     if (time[2].includes('AM') || time[2].includes('PM')){ //account for military time vs non 
         completeTime  += ' ' + time[2].split(' ')[1]
     }
+//------------------------------------------------
+//here I am going to set colors for the genres and in eventCard.scss 
+
+let genreClass = 'eventGenre ' + genre.toLowerCase()
+
+
+
 
 
     return(
@@ -37,9 +46,9 @@ export default function EventCard( {event} ){
             <div className='eventCard' >
                 <img className='eventImage' src={image} alt={name} />
                 <div className='eventInfo'>
-                    <div className='eventGenre' > {genre} </div>
+                    <div className={genreClass} > {genre} </div>
                     <div className= 'eventName' >{event.name} </div>
-                    <div className='eventDate'> {day + ' ' + completeTime} </div>
+                    <div className='eventDate'> {day + ', ' + completeTime} </div>
                     <div className= 'eventLocation'> 
                     <img src="https://img.icons8.com/offices/480/000000/marker.png"/>
                     <div className="location"> {location} </div>

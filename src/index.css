@@ -51,6 +51,17 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 5px 5px 4px 6px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.music {
+  background-color: orange;
+}
+
+.sports {
+  background-color: green;
 }
 
 .eventInfo {
