@@ -42,27 +42,38 @@
 }
 
 h1 {
-  margin-left: 11%;
+  margin-left: 7%;
   font-size: 25px;
   font-family: garamond;
 }
 
 .eventContainerCategories {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 4%;
 }
 
-.eventCategorie {
-  display: inline;
-  justify-content: space-evenly;
-  margin-left: 11%;
-  margin-top: 8%;
+.eventCategory {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+  margin-top: 2%;
 }
-.eventCategorie:hover {
+.eventCategory img {
+  height: 16px;
+}
+.eventCategory div {
+  margin-left: 4%;
+}
+.eventCategory:hover {
   cursor: pointer;
   color: lightseagreen;
 }
-.eventCategorie:active {
+.eventCategory:active {
   transition: 0.2s;
 }
 
@@ -155,5 +166,5 @@ h1 {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: pink;
+  background-color: rgba(241, 201, 127, 0.9647058824);
 }/*# sourceMappingURL=index.css.map */
