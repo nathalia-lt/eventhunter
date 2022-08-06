@@ -17,31 +17,3 @@ h1{
     ;
 }
 
-.eventContainerCategories{
-    @include s.flexCenter(row);
-    justify-content: flex-start;
-    margin-left: 4%;
-    
-}
-
-.eventCategory{
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 3%;
-    margin-top: 2%;
-    img {
-        height: 16px;
-    }
-    div {
-        margin-left: 4%;
-    }
-    &:hover{
-        cursor: pointer;
-        color:lightseagreen;
-    }
-    &:active{
-        transition:.2s;
-    }
-
-}
