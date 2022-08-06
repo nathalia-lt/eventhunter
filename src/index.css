@@ -33,6 +33,39 @@
   flex-wrap: wrap;
 }
 
+.eventContainerTitle {
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
+}
+
+h1 {
+  margin-left: 11%;
+  font-size: 25px;
+  font-family: garamond;
+}
+
+.eventContainerCategories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventCategorie {
+  display: inline;
+  justify-content: space-evenly;
+  margin-left: 11%;
+  margin-top: 8%;
+}
+.eventCategorie:hover {
+  cursor: pointer;
+  color: lightseagreen;
+}
+.eventCategorie:active {
+  transition: 0.2s;
+}
+
 .eventImage {
   height: 150px;
   width: inherit;
@@ -64,7 +97,7 @@
 }
 
 .sports {
-  background-color: green;
+  background-color: #b14569;
 }
 
 .eventInfo {
@@ -83,7 +116,8 @@
 }
 
 .eventDate {
-  color: orange;
+  color: #e2c649;
+  font-weight: 550;
 }
 
 .eventLocation {
@@ -92,7 +126,7 @@
   align-items: center;
 }
 .eventLocation img {
-  height: 17px;
+  height: 21px;
   filter: grayscale(100%);
   margin-right: 1.5%;
 }

@@ -52,7 +52,8 @@
 }
 
 .eventDate{
-    color: orange
+    color: #e2c649;
+    font-weight: 550;
 }
 
 .eventLocation{
@@ -60,7 +61,7 @@
     flex-direction: row;
     align-items: center;
     img{
-        height: 17px;
+        height: 21px;
         filter: grayscale(100%);
         margin-right: 1.5%;
     }

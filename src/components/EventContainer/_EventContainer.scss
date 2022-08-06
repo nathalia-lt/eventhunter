@@ -5,3 +5,37 @@
     flex-wrap: wrap;
 }
 
+.eventContainerTitle{
+    font-weight: 500;
+    width: fit-content;
+    display:inline;
+}
+h1{
+    margin-left: 11%;
+    font-size: 25px;
+    font-family: garamond
+    ;
+}
+
+.eventContainerCategories{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+.eventCategorie{
+    display:inline;
+    justify-content: space-evenly;
+    margin-left: 11%;
+    margin-top: 8%;
+    &:hover{
+        cursor: pointer;
+        color:lightseagreen;
+    }
+    &:active{
+        transition:.2s;
+    }
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+}
