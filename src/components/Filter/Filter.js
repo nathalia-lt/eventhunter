@@ -72,9 +72,12 @@ export default function Filter( {setEventData} ) {
 
 
     return (
+        <div>
         <div className='eventContainerCategories'>
             {filterCategoriesToDisplay}
 
+        </div>
+        
             {/* <div className="eventCategory">
                 <img src="https://img.icons8.com/small/500/000000/music.png" />
                 <div onClick={handleGenreFilterClick} >Music</div>
