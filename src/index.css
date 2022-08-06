@@ -1,5 +1,5 @@
 .test {
-  background-color: rgba(0, 0, 76, 0.367);
+  background-color: #9b5b7d;
   font-size: 18vh;
 }
 .test:hover {
@@ -55,7 +55,7 @@ h1 {
 }
 
 .eventCard {
-  background-color: rgba(0, 0, 76, 0.367);
+  background-color: #9b5b7d;
   color: white;
   width: 275px;
   height: 400px;
@@ -64,7 +64,7 @@ h1 {
 }
 
 .eventGenre {
-  background-color: silver;
+  background-color: rgba(155, 91, 125, 0.0196078431);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
