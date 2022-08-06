@@ -7,6 +7,10 @@ export default function Home( {eventData, setEventData} ){
     eventData={eventData}
 /> : null
 
+let displayPageButtons = eventData._embedded ? <PageButtons
+eventData={eventData}
+/> : null
+
 
 
     return(
@@ -17,9 +21,7 @@ export default function Home( {eventData, setEventData} ){
             setEventData={setEventData}
             />
             {displayEvents}
-            <PageButtons
-            eventData={eventData}
-            />
+            {displayPageButtons}
         </div>
     )
 }

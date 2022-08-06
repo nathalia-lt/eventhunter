@@ -4,7 +4,7 @@ export default function PageButtons( {eventData} ){
 
 let pageCount = eventData.page.number + 1
 let firstLink = eventData._links.first.href
-let prevLink = eventData._links.prev.href
+//let prevLink = eventData._links.prev.href
 let nextLink = eventData._links.next.href
 let lastLink = eventData._links.last.href
 
