@@ -49,7 +49,7 @@ export default function Filter( {setEventData} ) {
         function handleGenreFilterClick() {
             setGenreFilter(genre.toLowerCase())
             // &segmentId='+searchCategory;
-            let url = 'https://app.ticketmaster.com/discovery/v2/events.json?&segmentId='+ genreId +'&apikey=' + key
+            let url = 'https://app.ticketmaster.com/discovery/v2/events.json?&size=12&segmentId='+ genreId +'&apikey=' + key
             axios.get(url) //I needed to fetch my data again to be able to 'filter' the categories
                 .then(r => setEventData(r.data))
         }

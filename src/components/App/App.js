@@ -10,8 +10,8 @@ function App() {
 
 let [eventData, setEventData] = useState([])
 
-  let url = 'https://app.ticketmaster.com/discovery/v2/events.json?apikey=' + key
-
+  let url = 'https://app.ticketmaster.com/discovery/v2/events.json?&size=12&apikey=' + key
+// I add &size=12& to my API to change the number of results on my page
 
 
   useEffect(() => {
