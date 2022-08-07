@@ -11,10 +11,10 @@
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    margin-left: 3%;
+    margin-left: 4%;
     margin-top: 2%;
     img {
-        height: 16px;
+        height: 18px;
     }
     div {
         margin-left: 4%;
@@ -23,11 +23,11 @@
         cursor: pointer;
         color:lightseagreen;
     }
-    &:active{
+    &:active{ //faz o botao mexer quando clica
         transition:.2s;
     }
 }
 
 .selected{
-    color: maroon;
+    color: white;
 }

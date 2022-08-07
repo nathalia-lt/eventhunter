@@ -26,7 +26,7 @@ export default function Filter( {setEventData} ) {
         switch (genre) {
             default:
                 case 'All':
-                img = 'https://img.icons8.com/small/500/000000/music.png'
+                img = 'https://img.icons8.com/external-neu-royyan-wijaya/512/000000/external-all-neu-development-neu-royyan-wijaya.png'
                 genreId =''
                 break
             case 'Music':
@@ -42,7 +42,7 @@ export default function Filter( {setEventData} ) {
                 genreId = 'KZFzniwnSyZfZ7v7na'
                 break
             case 'Kids':
-                img = 'https://img.icons8.com/ios/500/000000/kiss-panda--v1.png'
+                img = 'https://img.icons8.com/ios/500/000000/children--v1.png'
                 genreId = ''
                 break
         }
