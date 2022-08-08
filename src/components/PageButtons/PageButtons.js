@@ -13,19 +13,37 @@ export default function PageButtons({ eventData, setEventData }) {
     function firstButtonClick() {
         let newUrl = url + firstLink + apiKey
         axios.get(newUrl) 
-            .then(r => setEventData(r.data))
+        .then(r => {
+            if (r.data._embedded.events) {
+                setEventData(r.data)
+            } else { //if I dont get results for my search it is going to alert
+                alert('NO RESULTS')
+            }
+        })
     }
 
     function nextButtonClick() {
         let newUrl = url + nextLink + apiKey
         axios.get(newUrl) 
-            .then(r => setEventData(r.data))
+            .then(r => {
+                if (r.data._embedded.events) {
+                    setEventData(r.data)
+                } else { //if I dont get results for my search it is going to alert
+                    alert('NO RESULTS')
+                }
+            })
     }
 
     function previousButtonClick() {
         let newUrl = url + prevLink + apiKey
         axios.get(newUrl) 
-            .then(r => setEventData(r.data))
+        .then(r => {
+            if (r.data._embedded.events) {
+                setEventData(r.data)
+            } else { //if I dont get results for my search it is going to alert
+                alert('NO RESULTS')
+            }
+        })
     }
 
     return (
