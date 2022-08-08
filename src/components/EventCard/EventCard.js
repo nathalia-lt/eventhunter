@@ -43,8 +43,6 @@ let genreClass = 'eventGenre ' + genre.toLowerCase()
 function HandleButtonClick(){
     
 }
-
-
     return(
         <div>
             <div className='eventCard' >

@@ -68,9 +68,6 @@ export default function Filter( {setEventData} ) {
     //-----------------------------------------------
 
 
-
-
-
     return (
         <div>
         <div className='eventContainerCategories'>
