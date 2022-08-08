@@ -43,7 +43,7 @@ export default function Filter( {setEventData} ) {
                 break
             case 'Kids':
                 img = 'https://img.icons8.com/ios/500/000000/children--v1.png'
-                genreId = ''
+                genreId = 'KZFzniwnSyZfZ7v7n1'
                 break
         }
         function handleGenreFilterClick() {
