@@ -81,6 +81,10 @@ h1 {
   background-color: #b14569;
 }
 
+.artstheatre {
+  background-color: #1b8a9e;
+}
+
 .eventInfo {
   margin-left: 7%;
   margin-top: 5%;
@@ -147,11 +151,11 @@ h1 {
   font-size: 20px;
   display: flex;
   flex-direction: row;
-  margin-left: 3%;
+  margin-left: 4%;
   margin-top: 2%;
 }
 .eventCategory img {
-  height: 16px;
+  height: 18px;
 }
 .eventCategory div {
   margin-left: 4%;
@@ -165,7 +169,7 @@ h1 {
 }
 
 .selected {
-  color: #8b4869;
+  color: white;
 }
 
 body {

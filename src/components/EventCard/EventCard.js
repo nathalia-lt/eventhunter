@@ -15,7 +15,7 @@ export default function EventCard( {event} ){
     //console.log(location)
     let venue = event._embedded.venues.name
     let genre = event.classifications[0].segment.name.toUpperCase()
-    // console.log(genre)
+     //console.log(genre)
 
 
     let dateTime = new Date(date)
@@ -35,7 +35,9 @@ export default function EventCard( {event} ){
 //------------------------------------------------
 //here I am going to set colors for the genres and in eventCard.scss 
 
-let genreClass = 'eventGenre ' + genre.toLowerCase()
+let genreClass = 'eventGenre ' + genre.toLowerCase().replace(/ /g, '').replace('&', '')
+console.log(genreClass)
+//I need to get rid of the space between  arts e theatre. So I used replace  (regular expression//) g (g means globally)
 
 //------------------------------------------------
 //button
@@ -49,6 +51,7 @@ function HandleButtonClick(){
                 <img className='eventImage' src={image} alt={name} />
                 <div className='eventInfo'>
                     <div className={genreClass} > {genre} </div>
+                    {/* a className can also be a variable, that will change depends on the event data */}
                     <div className= 'eventName' >{event.name} </div>
                     <div className='eventDate'> {day + ', ' + completeTime} </div>
                     <div className= 'eventLocation'>
