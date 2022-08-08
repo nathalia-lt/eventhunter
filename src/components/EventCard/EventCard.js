@@ -45,9 +45,6 @@ export default function EventCard({ event }) {
     }
 
 
-
-
-
     //console.log(date)
     let city = event._embedded.venues[0].city.name
     //console.log(city)
@@ -65,7 +62,7 @@ export default function EventCard({ event }) {
 
     let genreClass = 'eventGenre ' + genre.toLowerCase().replace(/ /g, '').replace('&', '')
 
-    //I need to get rid of the space between  arts e theatre. So I used replace  (regular expression//) g (g means globally)
+    //I need to get rid of the space between  arts e theatre. So I used replace (regular expression//) g (g means globally)
 
     //------------------------------------------------
     //button

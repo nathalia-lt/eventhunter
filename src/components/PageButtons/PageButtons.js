@@ -30,12 +30,11 @@ export default function PageButtons({ eventData, setEventData }) {
 
     return (
 
-        <div className="pageButtonsContainer">
-            <button onClick={firstButtonClick} >First</button>
-            <button disabled={!prevLink} onClick={previousButtonClick} >Previous</button>
-            <div> {pageCount} </div>
-            <button onClick={nextButtonClick} >Next</button>
+        <div className="pageButtons">
+            {/* <button className= 'pageButton' onClick={firstButtonClick} >First</button> */}
+            <button className= 'pageButton' disabled={!prevLink} onClick={previousButtonClick} >Prev</button>
+            <div className= 'pageButton' > {pageCount} </div>
+            <button className= 'pageButton' onClick={nextButtonClick} >Next</button>
         </div>
-
     )
 }

@@ -1,3 +1,29 @@
 @use '../../styles' as s;
 
 
+.pageButtons{
+    @include s.flexCenter(row);
+    justify-content: center;
+}
+
+.pageButton{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    margin-right: 1%;
+    font-size: 17px;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.15);
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+    &:disabled{
+        transform: scale(1);
+    }
+
+}
