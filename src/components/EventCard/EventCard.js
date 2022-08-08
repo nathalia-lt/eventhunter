@@ -44,13 +44,22 @@ export default function EventCard({ event }) {
 
     }
 
+        //location
 
-    //console.log(date)
+    let location;
+    let state;
     let city = event._embedded.venues[0].city.name
-    //console.log(city)
-    let state = event._embedded.venues[0].state.stateCode
-    //console.log(state)
-    let location = city + ', ' + state
+    if(event._embedded.venues[0].state){
+        state = event._embedded.venues[0].state.stateCode
+    }else if (event._embedded.venues[0].country){
+        state = event._embedded.venues[0].country.name
+    }else{
+        state = ''
+    }
+
+
+    location = city + ', ' + state
+    
     //console.log(location)
     let venue = event._embedded.venues.name
     let genre = event.classifications[0].segment.name.toUpperCase()
