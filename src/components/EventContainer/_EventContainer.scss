@@ -3,6 +3,7 @@
 .eventContainer{
     @include s.flexCenter(row);
     flex-wrap: wrap;
+    margin-top: 0.5%;
 }
 
 .eventContainerTitle{

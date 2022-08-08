@@ -41,6 +41,7 @@
     border: none;
     color: transparent; //when the search shrink what was typed disapers, then put a color in focus
     transition: 1s;
+    margin-top: 3%;
     &::placeholder{
         color: transparent;
     }
