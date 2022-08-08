@@ -9,6 +9,7 @@ export default function Home( {eventData, setEventData} ){
 
 let displayPageButtons = eventData._embedded ? <PageButtons
 eventData={eventData}
+setEventData={setEventData}
 /> : null
 
 

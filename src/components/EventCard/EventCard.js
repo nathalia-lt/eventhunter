@@ -36,7 +36,7 @@ export default function EventCard( {event} ){
 //here I am going to set colors for the genres and in eventCard.scss 
 
 let genreClass = 'eventGenre ' + genre.toLowerCase().replace(/ /g, '').replace('&', '')
-console.log(genreClass)
+
 //I need to get rid of the space between  arts e theatre. So I used replace  (regular expression//) g (g means globally)
 
 //------------------------------------------------
