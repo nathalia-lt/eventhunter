@@ -17,7 +17,7 @@ export default function Filter( {setEventData} ) {
 
     //setting the icons to also filter the categories
 
-    let allGenres = ['All', 'Sports', 'Music', 'Theater', 'Kids']
+    let allGenres = ['All', 'Sports', 'Music', 'Theatre', 'Kids']
 
     let filterCategoriesToDisplay = allGenres.map(genre => {
         let img;
@@ -37,7 +37,7 @@ export default function Filter( {setEventData} ) {
                 img = 'https://img.icons8.com/ios/500/000000/football2--v1.png'
                 genreId= 'KZFzniwnSyZfZ7v7nE'
                 break
-            case 'Theater':
+            case 'Theatre':
                 img = 'https://img.icons8.com/ios/500/000000/movie-projector.png'
                 genreId = 'KZFzniwnSyZfZ7v7na'
                 break
@@ -66,13 +66,44 @@ export default function Filter( {setEventData} ) {
     })
 
     //-----------------------------------------------
+    //search functionality
+
+    
+    let [searchTerm, setSearchTerm] =useState('')
+    
+    //then make a text input
+    //then I make the function to make it work
+    
+    function handleSearchChange(event){
+        setSearchTerm(event.target.value)
+    }
+    
+    //the we need a submmit, when we type we dont want it to change imediatamente, we want it to change when we press enter
+    
+    function handleSearchSubmit(e){
+        e.preventDefault() 
+        let apiKey = '&apikey=' + key
+        let searchUrl = 'https://app.ticketmaster.com/discovery/v2/suggest?&keyword=' + searchTerm + apiKey
+        console.log(searchUrl)
+        axios.get(searchUrl) //shows in the browser our eventData changed
+        .then(r => setEventData(r.data))
+    }
 
 
     return (
         <div>
-        <div className='eventContainerCategories'>
+        <div className='filter'>
             {filterCategoriesToDisplay}
+        <form onSubmit={handleSearchSubmit}>
 
+        <input
+        className="searchBar"
+        placeholder="search" 
+        type='text'
+        value={searchTerm}
+        onChange={handleSearchChange}
+        />
+        </form>
         </div>
         
             {/* <div className="eventCategory">

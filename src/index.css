@@ -85,6 +85,10 @@ h1 {
   background-color: #1b8a9e;
 }
 
+.miscellaneous {
+  background-color: #e2c649;
+}
+
 .eventInfo {
   margin-left: 7%;
   margin-top: 5%;
@@ -138,7 +142,7 @@ h1 {
   font-size: 14px;
 }
 
-.eventContainerCategories {
+.filter {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -170,6 +174,47 @@ h1 {
 
 .selected {
   color: white;
+}
+
+.searchBar {
+  align-self: right;
+  margin-left: 39vw;
+  font-size: 18px;
+  width: 80px;
+  background: url("https://img.icons8.com/ios-filled/20/000000/search--v1.png") right no-repeat;
+  border: none;
+  color: transparent;
+  transition: 1s;
+}
+.searchBar::-moz-placeholder {
+  color: transparent;
+}
+.searchBar:-ms-input-placeholder {
+  color: transparent;
+}
+.searchBar::placeholder {
+  color: transparent;
+}
+.searchBar:focus {
+  width: 250px;
+  margin-left: 27vw;
+  transition: 1s;
+  background-color: rgba(128, 128, 128, 0.245);
+  color: black;
+}
+.searchBar:focus::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.6);
+  -moz-transition: 1s;
+  transition: 1s;
+}
+.searchBar:focus:-ms-input-placeholder {
+  color: rgba(128, 128, 128, 0.6);
+  -ms-transition: 1s;
+  transition: 1s;
+}
+.searchBar:focus::placeholder {
+  color: rgba(128, 128, 128, 0.6);
+  transition: 1s;
 }
 
 body {

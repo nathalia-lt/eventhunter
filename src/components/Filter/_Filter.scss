@@ -1,6 +1,6 @@
 @use '../../styles' as s;
 
-.eventContainerCategories{
+.filter{
     @include s.flexCenter(row);
     justify-content: flex-start;
     margin-left: 4%;
@@ -30,4 +30,30 @@
 
 .selected{
     color: white;
+}
+
+.searchBar{
+    align-self: right;
+    margin-left: 39vw;
+    font-size: 18px;
+    width: 80px;
+    background: url("https://img.icons8.com/ios-filled/20/000000/search--v1.png") right no-repeat;
+    border: none;
+    color: transparent; //when the search shrink what was typed disapers, then put a color in focus
+    transition: 1s;
+    &::placeholder{
+        color: transparent;
+    }
+    &:focus{//make the searchBar grow
+        width: 250px;
+        margin-left: 27vw;
+        transition: 1s;
+        background-color: rgba(128, 128, 128, 0.245);
+        color: black;
+        &::placeholder{
+            color: rgba(128, 128, 128, 0.6);
+            transition: 1s;
+        }
+
+    }
 }

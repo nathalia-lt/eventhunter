@@ -30,7 +30,7 @@ export default function PageButtons({ eventData, setEventData }) {
 
     return (
 
-        <div className="eventContainerCategories">
+        <div className="pageButtonsContainer">
             <button onClick={firstButtonClick} >First</button>
             <button disabled={!prevLink} onClick={previousButtonClick} >Previous</button>
             <div> {pageCount} </div>

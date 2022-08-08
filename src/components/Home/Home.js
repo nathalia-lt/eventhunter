@@ -7,7 +7,7 @@ export default function Home( {eventData, setEventData} ){
     eventData={eventData}
 /> : null
 
-let displayPageButtons = eventData._embedded ? <PageButtons
+let displayPageButtons = eventData.pages ? <PageButtons
 eventData={eventData}
 setEventData={setEventData}
 /> : null
