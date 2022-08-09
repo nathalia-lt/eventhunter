@@ -7,12 +7,8 @@ import github from './github.png'
 export default function About() {
 
     function handleGitHubClick() {
-        
+
     }
-
-
-
-
 
     return (
         <div className='aboutPageContainer'>

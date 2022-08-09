@@ -3,44 +3,151 @@
 
 $height : 600px;
 $width : 500px;
+$marginbot : 3.5%;
+
+$heightTop: calc($height/1.8);
+$heightBottom: calc($height/3);
+
+$widthRight : calc($width/1.6);
+
 .eventPage {
     @include s.flexCenter(row);
-    background-color: maroon;
+    background-color: rgb(30, 30, 30);
+    div {
+
+        border-radius: s.$radius;
+    }
 }
 
 .left {
     @include s.flexCenter(column);
-    background-color: green;
     height: $height;
     width: $width;
 }
 
 .right {
     @include s.flexCenter(column);
-    background-color: navy;
     height: $height;
-    width: $width/1.5;
+    width: calc($width/1.5);
 }
 
 .eventPageImage{
-    height: 300px;
+    width: $width;
+    height: $heightTop;
+    margin-bottom: $marginbot;
+    border-radius: s.$radius;
 }
 
 .eventPageDescription{
-    background-color: rgb(64, 0, 128);
-    height: 200px;
+    // background-color: s.$primary;
+    height: $heightBottom;
     width: $width;
 }
 
 .eventPageId{
-    background-color: rgb(0, 128, 105);
-    height: $height/2;
-    width: $width/1.6;
-
+    background-color: s.$primary;
+    height: $heightTop;
+    width: $widthRight;
+    margin-bottom: $marginbot;
 }
 
 .eventPageLocation{
-    background-color: rgba(200, 12, 162, 0.927);
-    height: $height/3;
-    width: $width/1.6;
+    background-color: s.$primary;
+    height: $heightBottom;
+    width: $widthRight;
+}
+
+
+.page {
+    transform: scale(1.1);
+    margin-left: 9%;
+    margin-right: 9%;
+
+    div {
+        margin-top: 15%;
+
+    }
+}
+
+.eventHeader {
+    font-weight: 600;
+    margin-bottom: -10%;
+}
+
+.loc {
+    margin-left: 12%;
+    margin-right: 12%;
+    h3 {
+        margin-top: 15%;
+        margin-bottom: -1%; 
+    }
+    h4 {
+        margin-top: 15%;
+        margin-bottom: -1%; 
+    }
+    div {
+        margin-top: 3%;
+    }
+}
+
+.eventGenre {
+    &.page{
+        margin-left: 7%;
+    }
+
+}
+
+.extraGenres {
+    // margin-top: %;
+    display: flex;
+    flex-direction: row;
+    transform: scale(0.9);
+     div {
+        margin-top: -10%;
+        margin-left: -7% !important;
+        margin-right: 15%;
+     }
+}
+
+
+.eventPageButtons {
+    @include s.flexCenter(row);
+
+    margin-top: 10%;
+
+    button {
+        transition: .5s;
+        padding: 7.5px 10px;
+        // background-color: s.$alt;
+
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.15);
+            transition: .25s;
+            transform-origin: center bottom;
+            cursor: pointer;
+        }
+
+        &:active{
+            opacity: (0.5);
+            transform: scale(.9);
+            transition: .25s;
+            transform-origin: center bottom;
+        }
+
+        &:disabled {
+            transition: .5s;
+            opacity: 0.3;
+            transform: scale(1);
+            cursor: default;
+        }
+    }
+}
+
+.eventPageButton {
+    font-size: 20px;
+    margin-right: 5%;
+    border-radius: 5px;
+    border: none;
+
 }

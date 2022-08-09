@@ -340,7 +340,10 @@ h4 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: maroon;
+  background-color: rgb(30, 30, 30);
+}
+.eventPage div {
+  border-radius: 7px;
 }
 
 .left {
@@ -348,7 +351,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: green;
   height: 600px;
   width: 500px;
 }
@@ -358,31 +360,116 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: navy;
   height: 600px;
   width: 333.3333333333px;
 }
 
 .eventPageImage {
-  height: 300px;
+  width: 500px;
+  height: 333.3333333333px;
+  margin-bottom: 3.5%;
+  border-radius: 7px;
 }
 
 .eventPageDescription {
-  background-color: rgb(64, 0, 128);
   height: 200px;
   width: 500px;
 }
 
 .eventPageId {
-  background-color: rgb(0, 128, 105);
-  height: 300px;
+  background-color: #474554;
+  height: 333.3333333333px;
   width: 312.5px;
+  margin-bottom: 3.5%;
 }
 
 .eventPageLocation {
-  background-color: rgba(200, 12, 162, 0.927);
+  background-color: #474554;
   height: 200px;
   width: 312.5px;
+}
+
+.page {
+  transform: scale(1.1);
+  margin-left: 9%;
+  margin-right: 9%;
+}
+.page div {
+  margin-top: 15%;
+}
+
+.eventHeader {
+  font-weight: 600;
+  margin-bottom: -10%;
+}
+
+.loc {
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.loc h3 {
+  margin-top: 15%;
+  margin-bottom: -1%;
+}
+.loc h4 {
+  margin-top: 15%;
+  margin-bottom: -1%;
+}
+.loc div {
+  margin-top: 3%;
+}
+
+.eventGenre.page {
+  margin-left: 7%;
+}
+
+.extraGenres {
+  display: flex;
+  flex-direction: row;
+  transform: scale(0.9);
+}
+.extraGenres div {
+  margin-top: -10%;
+  margin-left: -7% !important;
+  margin-right: 15%;
+}
+
+.eventPageButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+.eventPageButtons button {
+  transition: 0.5s;
+  padding: 7.5px 10px;
+}
+.eventPageButtons button:hover {
+  opacity: 0.8;
+  transform: scale(1.15);
+  transition: 0.25s;
+  transform-origin: center bottom;
+  cursor: pointer;
+}
+.eventPageButtons button:active {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: 0.25s;
+  transform-origin: center bottom;
+}
+.eventPageButtons button:disabled {
+  transition: 0.5s;
+  opacity: 0.3;
+  transform: scale(1);
+  cursor: default;
+}
+
+.eventPageButton {
+  font-size: 20px;
+  margin-right: 5%;
+  border-radius: 5px;
+  border: none;
 }
 
 body {
