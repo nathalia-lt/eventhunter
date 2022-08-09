@@ -20,7 +20,12 @@ let [eventData, setEventData] = useState([])
   return (
   <div> 
     {/* anything we put up here will display in all the pages no matter what. The same thing apply below the routes as well */}
-    
+    <div className='headerContainer'>
+      {/* wheat color for header */}
+      <div className= 'about' >About</div>
+      <div className='title' >Explorer</div>
+      <div className= 'profile' >Profile</div>
+    </div>
     <Routes>
       <Route path='/' element={
         <Home 

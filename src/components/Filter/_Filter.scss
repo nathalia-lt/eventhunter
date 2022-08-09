@@ -21,7 +21,7 @@
     }
     &:hover{
         cursor: pointer;
-        color:lightseagreen;
+        color:#919191;
     }
     &:active{ //faz o botao mexer quando clica
         transition:.2s;
@@ -29,7 +29,7 @@
 }
 
 .selected{
-    color: white;
+    color: #ff05e9;
 }
 
 .searchBar{
