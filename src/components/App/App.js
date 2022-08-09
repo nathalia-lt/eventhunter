@@ -5,6 +5,7 @@ import  React, {useEffect, useState} from 'react';
 import axios from 'axios'
 import Home from '../Home/Home';
 import Header from '../Header/Header';
+import EventPage from '../EventPage/EventPage';
 
 function App() {
 
@@ -40,7 +41,8 @@ let [eventData, setEventData] = useState([])
       }
       />
       <Route exact path='/event/:id' element={ //aqui eu to criando uma nova pagina para cada card que eu clico aparecer as informacoes do card
-        <div> event page </div> //depois eu crio um component chamado eventpage.
+      <EventPage
+       /> //depois eu crio um component chamado eventpage.
       }
       />
 
