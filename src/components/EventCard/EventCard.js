@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 
 
 export default function EventCard({ event }) {
@@ -25,7 +26,6 @@ export default function EventCard({ event }) {
         //Military vs AM PM
 
         completeTime = time.slice(0, 2).join(':')
-        console.log("🚀 ~ file: EventCard.js ~ line 28 ~ EventCard ~ completeTime", completeTime)
         if (time[2].includes('AM') || time[2].includes('PM')) { //account for military time vs non 
             completeTime += ' ' + time[2].split(' ')[1]
         }
@@ -59,7 +59,7 @@ export default function EventCard({ event }) {
 
 
     location = city + ', ' + state
-    
+
     //console.log(location)
     let venue = event._embedded.venues.name
     let genre = event.classifications[0].segment.name.toUpperCase()
@@ -75,10 +75,19 @@ export default function EventCard({ event }) {
 
     //------------------------------------------------
     //button
+    //here we are going to create a button to our new page. on click is going to send us to the new page
+
+    let navigate = useNavigate() 
+
+    let id = event.id //Here I am getting an Id for each event
 
     function HandleButtonClick() {
-
+        navigate('/event/'+ id) //when we click on this button is going to send to the page event/ with the especific ID of the event
     }
+
+//----------------------------------------
+
+
 
 
 
@@ -97,7 +106,7 @@ export default function EventCard({ event }) {
                         <div className="location"> {location} </div>
                     </div>
                     <div className='eventButtonContainer'>
-                        <button className='eventButton'> Info </button>
+                        <button className='eventButton' onClick={HandleButtonClick} > Info </button>
                     </div>
                 </div>
 
