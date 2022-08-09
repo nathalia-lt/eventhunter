@@ -31,6 +31,10 @@ let [eventData, setEventData] = useState([])
         />
       }
       />
+      <Route path='/about' element={
+        <div> About </div>
+      }
+      />
     </Routes>
     
     </div>
