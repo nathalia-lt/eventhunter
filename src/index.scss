@@ -6,6 +6,7 @@
 @use './components/PageButtons/PageButtons';
 @use './components/Header/Header';
 @use './components/About/About';
+@use './components/EventPage/EventPage';
 
 
 //all ours scss files we need to link into index scss what will then
@@ -20,7 +21,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
-    
-    
+
 }
 
