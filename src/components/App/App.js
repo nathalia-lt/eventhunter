@@ -24,7 +24,7 @@ let [eventData, setEventData] = useState([])
     <Header
     />
     <Routes>
-      <Route path='/' element={
+      <Route path='/*' element={
         <Home 
         eventData={eventData}
         setEventData={setEventData}
@@ -33,6 +33,10 @@ let [eventData, setEventData] = useState([])
       />
       <Route path='/about' element={
         <div> About </div>
+      }
+      />
+      <Route path='/profile' element={
+        <div> profile </div>
       }
       />
     </Routes>
