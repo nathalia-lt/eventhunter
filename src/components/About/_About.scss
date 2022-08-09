@@ -1,1 +1,58 @@
 @use '../../styles' as s;
+
+
+.aboutPageContainer{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    margin-left: 42%;
+    font-family: sans-serif;
+}
+
+h4{
+    margin-left: 3%;
+}
+
+.paragraph{
+    font-family: sans-serif;
+    margin-left: 3%;
+    margin-right: 2%;
+    text-indent: 0.5em;
+    line-height: 1.5em;
+}
+
+.aboutPage{
+    background-color: s.$primary;
+        color: s.$text;
+        width: 550px;
+        height: 500px;
+        margin: 18px;
+        border-radius: s.$radius;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        flex-direction: column;    
+    }
+
+    .createdIcons{
+        margin-left: 10%;
+        img{
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            margin-right: 3%;
+        }
+    }
+
+    .infoIcons{
+        margin-left: 10%;
+        img{
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            margin-right: 3%;
+        }
+    }
+

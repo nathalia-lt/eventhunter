@@ -6,6 +6,7 @@ import axios from 'axios'
 import Home from '../Home/Home';
 import Header from '../Header/Header';
 import EventPage from '../EventPage/EventPage';
+import About from '../About/About';
 
 function App() {
 
@@ -33,7 +34,8 @@ let [eventData, setEventData] = useState([])
       }
       />
       <Route path='/about' element={
-        <div> About </div>
+        <About
+        />
       }
       />
       <Route path='/profile' element={

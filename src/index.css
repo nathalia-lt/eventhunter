@@ -280,6 +280,111 @@ h1 {
   margin: 3%;
 }
 
+.aboutPageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-left: 42%;
+  font-family: sans-serif;
+}
+
+h4 {
+  margin-left: 3%;
+}
+
+.paragraph {
+  font-family: sans-serif;
+  margin-left: 3%;
+  margin-right: 2%;
+  text-indent: 0.5em;
+  line-height: 1.5em;
+}
+
+.aboutPage {
+  background-color: #474554;
+  color: white;
+  width: 550px;
+  height: 500px;
+  margin: 18px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  flex-direction: column;
+}
+
+.createdIcons {
+  margin-left: 10%;
+}
+.createdIcons img {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin-right: 3%;
+}
+
+.infoIcons {
+  margin-left: 10%;
+}
+.infoIcons img {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin-right: 3%;
+}
+
+.eventPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: maroon;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  height: 600px;
+  width: 500px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: navy;
+  height: 600px;
+  width: 333.3333333333px;
+}
+
+.eventPageImage {
+  height: 300px;
+}
+
+.eventPageDescription {
+  background-color: rgb(64, 0, 128);
+  height: 200px;
+  width: 500px;
+}
+
+.eventPageId {
+  background-color: rgb(0, 128, 105);
+  height: 300px;
+  width: 312.5px;
+}
+
+.eventPageLocation {
+  background-color: rgba(200, 12, 162, 0.927);
+  height: 200px;
+  width: 312.5px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
