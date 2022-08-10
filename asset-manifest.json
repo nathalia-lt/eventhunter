@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eventhunter/static/css/main.02188c57.css",
+    "main.js": "/eventhunter/static/js/main.3da10d45.js",
+    "index.html": "/eventhunter/index.html",
+    "main.02188c57.css.map": "/eventhunter/static/css/main.02188c57.css.map",
+    "main.3da10d45.js.map": "/eventhunter/static/js/main.3da10d45.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02188c57.css",
+    "static/js/main.3da10d45.js"
+  ]
+}
