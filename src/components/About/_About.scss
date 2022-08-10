@@ -6,18 +6,9 @@
     justify-content: center;
 }
 
-h1{
-    margin-left: 42%;
-    font-family: sans-serif;
-}
-
-h4{
-    margin-left: 3%;
-}
 
 .paragraph{
     font-family: sans-serif;
-    margin-left: 3%;
     margin-right: 2%;
     text-indent: 0.5em;
     line-height: 1.5em;
@@ -25,34 +16,45 @@ h4{
 
 .aboutPage{
     background-color: s.$primary;
-        color: s.$text;
-        width: 550px;
-        height: 500px;
-        margin: 18px;
-        border-radius: s.$radius;
+    color: s.$text;
+    width: 550px;
+    height: 500px;
+    margin: 18px;
+    border-radius: s.$radius;
+    
+    h1{
+        font-family: sans-serif;
+    }
+    
+    h4{
+        align-self: flex-start;
+    }
+}
+
+
+    .icons{
         display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        flex-direction: column;    
-    }
+        flex-direction: row;
+        align-self: flex-start;
 
-    .createdIcons{
-        margin-left: 10%;
         img{
             cursor: pointer;
-            height: 40px;
-            width: 40px;
+            height: 50px;
+            width: 50px;
             margin-right: 3%;
+        }
+        &.js{
+            img{
+                cursor: default;
+            }
         }
     }
 
-    .infoIcons{
-        margin-left: 10%;
-        img{
-            cursor: pointer;
-            height: 40px;
-            width: 40px;
-            margin-right: 3%;
-        }
-    }
-
+.aboutInformation{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column; 
+    margin-left: 3%;
+    margin-right: 3%;
+}

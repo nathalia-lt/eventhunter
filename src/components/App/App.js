@@ -25,6 +25,7 @@ let [eventData, setEventData] = useState([])
     {/* anything we put up here will display in all the pages no matter what. The same thing apply below the routes as well */}
     <Header
     />
+    <hr></hr>
     <Routes>
       <Route path='/*' element={
         <Home 
@@ -49,7 +50,7 @@ let [eventData, setEventData] = useState([])
       />
 
     </Routes>
-    
+      <hr></hr>
     </div>
 
   );
