@@ -2,8 +2,10 @@ import EventContainer from '../EventContainer/EventContainer'
 import Filter from '../Filter/Filter'
 import PageButtons from '../PageButtons/PageButtons'
 
-export default function Home( {eventData, setEventData} ){
+export default function Home( {eventData, setEventData, favoritesData, setFavoritesData} ){
     let displayEvents = eventData._embedded ? <EventContainer
+    favoritesData={favoritesData}
+    setFavoritesData={setFavoritesData}
     eventData={eventData}
 /> : null
 

@@ -19,7 +19,16 @@ let [eventData, setEventData] = useState([])
   useEffect(() => {
     axios.get(url)
     .then(r => setEventData(r.data))
-  },[]) 
+  },[])
+  
+//---------------------------------------------------------------------
+//creating a fake favorite page
+
+let [favoritesData, setFavoritesData] = useState([])
+
+
+
+
 
   return (
   <div> 
@@ -32,6 +41,8 @@ let [eventData, setEventData] = useState([])
         <Home 
         eventData={eventData}
         setEventData={setEventData}
+        favoritesData={favoritesData}
+        setFavoritesData={setFavoritesData}
         />
       }
       />

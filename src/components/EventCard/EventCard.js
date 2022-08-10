@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 
-export default function EventCard({ event }) {
+export default function EventCard({ event, favoriteEvent }) {
 
     let image = event.images[0].url
     //console.log(image)
@@ -107,6 +107,7 @@ export default function EventCard({ event }) {
                     </div>
                     <div className='eventButtonContainer'>
                         <button className='eventButton' onClick={HandleButtonClick} > Info </button>
+                        <button onClick={favoriteEvent} > favorite </button>
                     </div>
                 </div>
 
