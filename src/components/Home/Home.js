@@ -6,7 +6,7 @@ export default function Home( {eventData, setEventData, favoritesData, setFavori
     let displayEvents = eventData._embedded ? <EventContainer
     favoritesData={favoritesData}
     setFavoritesData={setFavoritesData}
-    eventData={eventData}
+    eventData={eventData._embedded.events}
 /> : null
 
 let displayPageButtons = eventData.page ? <PageButtons

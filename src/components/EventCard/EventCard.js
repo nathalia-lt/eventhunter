@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 
-export default function EventCard({ event, favoriteEvent }) {
+export default function EventCard({ event, favoriteEvent, unFavoriteEvent, inFavorites }) {
 
     let image = event.images[0].url
     //console.log(image)
@@ -107,7 +107,7 @@ export default function EventCard({ event, favoriteEvent }) {
                     </div>
                     <div className='eventButtonContainer'>
                         <button className='eventButton' onClick={HandleButtonClick} > Info </button>
-                        <button onClick={favoriteEvent} > favorite </button>
+                        { inFavorites ? <button className="eventButton" onClick={unFavoriteEvent}>Unfavorite</button> :<button className="eventButton" onClick={favoriteEvent}>Favorite</button>}
                     </div>
                 </div>
 

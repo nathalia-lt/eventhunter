@@ -10,7 +10,7 @@ function aboutClick(){
 }
 
 function profileClick(){
-    navigate('/profile')
+    navigate('/favorites')
 }
 
 function titleClick(){

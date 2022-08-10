@@ -1,7 +1,14 @@
+import EventContainer from "../EventContainer/EventContainer";
 
 
-export default function Favorites(){
+export default function Favorites( {favoritesData, setFavoritesData} ){
     return(
-        <div></div>
+        <div>
+            <EventContainer
+            eventData={favoritesData}
+            favoritesData={favoritesData}
+            setFavoritesData={setFavoritesData}
+            />
+        </div>
     )
 }

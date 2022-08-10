@@ -3,11 +3,17 @@ import React, { useState } from "react"
 import EventCard from "../EventCard/EventCard"
 
 
-export default function EventContainer({ eventData, favoritesData, setFavoritesData }) {
-    let allEvents = eventData._embedded.events
-    let eventsToDisplay = allEvents.map(event => {
+export default function EventContainer({ eventData, favoritesData,setFavoritesData }) {
+    let favoriteIds = favoritesData.map(event=>event.id)
+
+    let eventsToDisplay = eventData.map(event => {
         function favoriteEvent(){
-            setFavoritesData([...favoritesData, event]) //copies the current values of the current favories is and add event too
+            setFavoritesData([...favoritesData,event])
+        }
+        let inFavorites = favoriteIds.includes(event.id)
+        function unFavoriteEvent(){
+            let filtedFavorites = favoritesData.filter(fav => fav.id !== event.id)
+            setFavoritesData(filtedFavorites)
         }
 
         return (
@@ -15,20 +21,15 @@ export default function EventContainer({ eventData, favoritesData, setFavoritesD
                 key={event.id}
                 event={event}
                 favoriteEvent={favoriteEvent}
+                inFavorites={inFavorites}
+                unFavoriteEvent={unFavoriteEvent}
             />
         )
     })
-    let event = eventData._embedded.events[0]
-    //console.log(event)
 
-    //------------------------------------------------------
-
-   
     return (
-        <div className='eventContainerTitle'>
-            <div className='eventContainer'>
-                {eventsToDisplay}
-            </div>
+        <div className="eventContainer">
+            {eventsToDisplay}
         </div>
     )
 }

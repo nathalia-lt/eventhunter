@@ -53,6 +53,8 @@ let [favoritesData, setFavoritesData] = useState([])
       />
       <Route path='/favorites' element={
         <Favorites
+        favoritesData={favoritesData}
+        setFavoritesData={setFavoritesData}
         />
       }
       />
