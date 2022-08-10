@@ -7,6 +7,7 @@ import Home from '../Home/Home';
 import Header from '../Header/Header';
 import EventPage from '../EventPage/EventPage';
 import About from '../About/About';
+import Favorites from '../Favorites/Favorites';
 
 function App() {
 
@@ -39,8 +40,9 @@ let [eventData, setEventData] = useState([])
         />
       }
       />
-      <Route path='/profile' element={
-        <div> profile </div>
+      <Route path='/favorites' element={
+        <Favorites
+        />
       }
       />
       <Route exact path='/event/:id' element={ //aqui eu to criando uma nova pagina para cada card que eu clico aparecer as informacoes do card
