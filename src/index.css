@@ -281,38 +281,70 @@
   flex-wrap: wrap;
   color: #c2c0c8;
 }
-
-.about {
+.headerContainer .about,
+.headerContainer .profile {
+  align-self: center;
+  margin: 1%;
   font-size: 20px;
   font-weight: 300;
-  margin-left: 40%;
-  margin: 3%;
   cursor: pointer;
 }
-.about:hover {
+.headerContainer .about:hover,
+.headerContainer .profile:hover {
   color: #DCA11D;
 }
 
 .title {
-  margin-bottom: 2vh;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 9vh;
   color: #DCA11D;
   cursor: pointer;
+  margin: 1%;
 }
 
-.profile {
+.profile-menu {
+  border-radius: 7px;
+  position: absolute;
+  text-align: right;
+  margin-top: 7.5%;
+  margin-left: 63.5%;
+  background-color: rgba(84, 86, 91, 0.7);
+  z-index: 1;
+  -webkit-animation: dropDown 0.5s ease-in-out forwards;
+          animation: dropDown 0.5s ease-in-out forwards;
+  transform-origin: top center;
+  color: white;
+}
+
+.menu-option {
+  padding: 12px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.menu-option.favorite {
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 300;
-  margin-left: 100%;
-  margin-left: 500%;
-  margin: 3%;
 }
-.profile:hover {
-  color: #DCA11D;
+.menu-option.favorite:hover {
+  color: #c2c0c8;
 }
 
+@-webkit-keyframes dropDown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .aboutPageContainer {
   display: flex;
   justify-content: center;
@@ -500,6 +532,12 @@
   margin-right: 5%;
   border-radius: 5px;
   border: none;
+}
+
+.favoriteTitle {
+  margin-left: 2%;
+  color: #c2c0c8;
+  font-size: 35px;
 }
 
 body {

@@ -8,41 +8,62 @@
     justify-content: space-around;
     flex-wrap: wrap;
     color: s.$alt;
-}
 
-.about{
-    font-size: 20px;
-    font-weight: 300;
-    margin-left: 40%;
-    margin: 3%;
-    cursor: pointer;
-    &:hover{
-        color: s.$hover;
-        }
-}
-
-.title{
-    //position: absolute; 
-    margin-bottom: 2vh;
-    //font-family:'Courgette', cursive;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 9vh;
-    color: s.$hover;
-    //margin-right: 4.5vw;
-    //margin-left: 38%;
-    cursor: pointer;
-    
-}
-
-.profile{
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 300;
-    margin-left: 100%;
-    margin-left: 500%;
-    margin: 3%;
-    &:hover{
-    color: s.$hover;
+    .about,
+    .profile {
+        align-self: center;
+        margin: 1%;
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        &:hover{
+            color: s.$hover;
+            }
     }
 }
 
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9vh ;
+    color: s.$hover;
+    cursor: pointer;
+    margin: 1%;
+
+}
+
+
+.profile-menu {
+    border-radius: s.$radius;
+    position: absolute;
+    text-align: right;
+    margin-top: 7.5%;
+    margin-left: 63.5%;
+    background-color: rgba(s.$primary, .70); 
+    z-index: 1;
+    animation: dropDown .5s ease-in-out forwards;
+    transform-origin: top center;
+    color: s.$text;
+}
+
+.menu-option{
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &.favorite {
+        cursor: pointer;
+        &:hover{
+            color: s.$alt;
+        }
+    }
+}
+
+@keyframes dropDown {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}

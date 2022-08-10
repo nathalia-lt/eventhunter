@@ -1,1 +1,7 @@
 @use '../../styles' as s;
+
+.favoriteTitle{
+    margin-left: 2%;
+    color: s.$alt;
+    font-size: 35px;
+}
