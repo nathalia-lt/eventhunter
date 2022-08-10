@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import emptyheart from './emptyheart.png'
+import redheart from './redheart.png'
 
 
 export default function EventCard({ event, favoriteEvent, unFavoriteEvent, inFavorites }) {
@@ -102,12 +104,12 @@ export default function EventCard({ event, favoriteEvent, unFavoriteEvent, inFav
                     <div className='eventDate'> {eventDateAndTime} </div>
                     <div className='eventLocation'>
                         {/* <img src='https://img.icons8.com/ios/50/000000/marker--v1.png' /> */}
-                        <img src="https://img.icons8.com/offices/480/000000/marker.png" />
+                        <img src="https://img.icons8.com/offices/480/000000/marker.png" alt='' />
                         <div className="location"> {location} </div>
                     </div>
                     <div className='eventButtonContainer'>
-                        <button className='eventButton' onClick={HandleButtonClick} > Info </button>
-                        { inFavorites ? <button className="eventButton" onClick={unFavoriteEvent}>Unfavorite</button> :<button className="eventButton" onClick={favoriteEvent}>Favorite</button>}
+                        <button className='eventButtonInfo' onClick={HandleButtonClick} > Info </button>
+                        { inFavorites ? <img src={redheart} alt='' className="eventButtonHeart" onClick={unFavoriteEvent} /> :<img src={emptyheart} alt='' className="eventButtonHeart unfavorited" onClick={favoriteEvent}/>}
                     </div>
                 </div>
 

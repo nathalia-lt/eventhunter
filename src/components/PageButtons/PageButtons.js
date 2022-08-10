@@ -51,7 +51,7 @@ export default function PageButtons({ eventData, setEventData }) {
         <div className="pageButtons">
             {/* <button className= 'pageButton' onClick={firstButtonClick} >First</button> */}
             <button className= 'pageButton' disabled={!prevLink} onClick={previousButtonClick} >Prev</button>
-            <div className= 'pageButton' > {pageCount} </div>
+            <div className= 'pageButton text' > {pageCount} </div>
             <button className= 'pageButton' onClick={nextButtonClick} >Next</button>
         </div>
     )

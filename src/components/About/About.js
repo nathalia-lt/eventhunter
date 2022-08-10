@@ -22,7 +22,7 @@ export default function About() {
                 <div className='aboutInformation'>
 
                 <h1 className= 'aboutTitle'>  About </h1>
-                <p className= 'paragraph'>Explore is a website to help users find events around the United States.
+                <p className= 'paragraph'>EventHunter is a website to help users find events around the United States.
                     You can search for a specific event, save favorites, and get links to buy tickets.
                     </p>
                 <h4> Created by Nathalia Troina</h4>

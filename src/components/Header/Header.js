@@ -22,7 +22,7 @@ function titleClick(){
         <div className='headerContainer'>
         {/* wheat color for header */}
         <div className= 'about' onClick={aboutClick} >About</div>
-        <div className='title' onClick={titleClick} > BargainHunter </div>
+        <div className='title' onClick={titleClick} > EventHunter </div>
         <div className= 'profile' onClick={profileClick} >Profile</div>
     </div>
     )

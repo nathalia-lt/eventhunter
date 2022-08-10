@@ -7,14 +7,18 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    color: s.$alt;
 }
 
 .about{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     margin-left: 40%;
     margin: 3%;
     cursor: pointer;
+    &:hover{
+        color: s.$hover;
+        }
 }
 
 .title{
@@ -23,7 +27,7 @@
     //font-family:'Courgette', cursive;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9vh;
-    color: rgb(175, 49, 49);
+    color: s.$hover;
     //margin-right: 4.5vw;
     //margin-left: 38%;
     cursor: pointer;
@@ -31,10 +35,14 @@
 }
 
 .profile{
-    font-size: 15px;
+    cursor: pointer;
+    font-size: 20px;
     font-weight: 300;
     margin-left: 100%;
     margin-left: 500%;
     margin: 3%;
+    &:hover{
+    color: s.$hover;
+    }
 }
 

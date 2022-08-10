@@ -4,6 +4,8 @@
     @include s.flexCenter(row);
     justify-content: flex-start;
     margin-left: 4%;
+    color: s.$alt;
+    margin-bottom: 1%;
     
 }
 
@@ -14,6 +16,7 @@
     margin-left: 4%;
     margin-top: 2%;
     img {
+        filter: invert(75%);
         height: 18px;
     }
     div {
@@ -21,7 +24,7 @@
     }
     &:hover{
         cursor: pointer;
-        color:#919191;
+        color:#FFC547;
     }
     &:active{ //faz o botao mexer quando clica
         transition:.2s;
@@ -29,7 +32,7 @@
 }
 
 .selected{
-    color: #ff05e9;
+    color: s.$hover;
 }
 
 .searchBar{
@@ -37,7 +40,8 @@
     margin-left: 39vw;
     font-size: 18px;
     width: 80px;
-    background: url("https://img.icons8.com/ios-filled/20/000000/search--v1.png") right no-repeat;
+    //height: 20px;
+    background: url('./searchicon.png') right no-repeat;
     border: none;
     color: transparent; //when the search shrink what was typed disapers, then put a color in focus
     transition: 1s;
@@ -49,8 +53,8 @@
         width: 250px;
         margin-left: 27vw;
         transition: 1s;
-        background-color: rgba(128, 128, 128, 0.245);
-        color: black;
+        background-color: rgba(186, 185, 185, 0.245);
+        color: whitesmoke;
         &::placeholder{
             color: rgba(128, 128, 128, 0.6);
             transition: 1s;
