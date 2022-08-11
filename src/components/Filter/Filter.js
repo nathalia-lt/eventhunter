@@ -117,19 +117,19 @@ export default function Filter({ setEventData }) {
             {/* <div className="eventCategory">
                 <img src="https://img.icons8.com/small/500/000000/music.png" />
                 <div onClick={handleGenreFilterClick} >Music</div>
-            </div>
-            <div className="eventCategory">
+                </div>
+                <div className="eventCategory">
                 <img src="https://img.icons8.com/ios/500/000000/football2--v1.png" />
                 <div onClick={handleGenreFilterClick} >Sports</div>
-            </div>
-            <div className="eventCategory">
+                </div>
+                <div className="eventCategory">
                 <img src="https://img.icons8.com/ios/500/000000/movie-projector.png" />
                 <div onClick={handleGenreFilterClick} >Theater</div>
-            </div>
-            <div className="eventCategory">
+                </div>
+                <div className="eventCategory">
                 <img src="https://img.icons8.com/ios/500/000000/kiss-panda--v1.png" />
                 <div onClick={handleGenreFilterClick} >Kids</div>
             </div> */}
-        </div>
-    )
-}
+            </div>
+        )
+    }
