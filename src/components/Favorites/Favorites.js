@@ -5,7 +5,7 @@ export default function Favorites( {favoritesData, setFavoritesData} ){
     document.title = 'Favorites Events'
     return(
         <div>
-            <h1 className='favoriteTitle' > Your Favorites Events </h1>
+            <h1 className='favoriteTitle' > Your Favorite Events </h1>
             <EventContainer
             eventData={favoritesData}
             favoritesData={favoritesData}

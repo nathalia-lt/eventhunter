@@ -8,7 +8,7 @@ export default function EventContainer({ eventData, favoritesData,setFavoritesDa
 
     let eventsToDisplay = eventData.map(event => {
         function favoriteEvent(){
-            setFavoritesData([...favoritesData,event])
+        setFavoritesData([...favoritesData,event])
         }
         let inFavorites = favoriteIds.includes(event.id)
         function unFavoriteEvent(){

@@ -2,6 +2,7 @@ import javascript from './javascript.png'
 import react from './react.png'
 import linkedin from './linkedin.png'
 import github from './github.png'
+import sass from './sass.png'
 
 
 export default function About() {
@@ -10,7 +11,7 @@ export default function About() {
     
 
     function handleGitHubClick() {
-        window.open('https://github.com/nathalia-lt/lafiesta')
+        window.open('https://github.com/nathalia-lt/eventhunter')
     }
 
     function handleLinkedinClick() {
@@ -31,6 +32,7 @@ export default function About() {
                 <div className= 'icons js'>
                     <img src={javascript} alt='' />
                     <img src={react} alt='' />
+                    <img src={sass} alt='' />
                 </div>
                 <h4> For More Information: </h4>
                 <div className= 'icons' >

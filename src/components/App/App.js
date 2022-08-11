@@ -56,8 +56,12 @@ let [favoritesData, setFavoritesData] = useState([])
       }
       />
       <Route exact path='/event/:id' element={ //aqui eu to criando uma nova pagina para cada card que eu clico aparecer as informacoes do card
+      //depois eu crio um component chamado eventpage.
+      
       <EventPage
-       /> //depois eu crio um component chamado eventpage.
+      favoritesData={favoritesData}
+      setFavoritesData={setFavoritesData}
+      />
       }
       />
 

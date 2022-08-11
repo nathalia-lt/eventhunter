@@ -9,10 +9,12 @@ export default function Header(){
 let navigate = useNavigate() // allows us to navigate the page
 
 function aboutClick(){
+    setShowProfileMenu(false)
     navigate('/about')
 }
 
 function favoritesClick(){
+    setShowProfileMenu(false)
     navigate('/favorites')
 }
 function profileClick(){
@@ -21,6 +23,7 @@ function profileClick(){
 
 
 function titleClick(){
+    setShowProfileMenu(false)
     navigate('/')
 }
 

@@ -112,8 +112,7 @@ $widthRight : calc($width/1.6);
 
 .eventPageButtons {
     @include s.flexCenter(row);
-    margin-top: 10%;
-
+    margin-top: 16%;
     button {
         transition: .5s;
         padding: 7.5px 10px;

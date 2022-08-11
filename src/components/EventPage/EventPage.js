@@ -2,10 +2,12 @@ import { useParams } from "react-router-dom"
 import axios from "axios"
 import key from "../../key"
 import React, { useEffect, useState } from "react"
+import emptyheart from './emptyheart.png'
+import redheart from './redheart.png'
 
 
 
-export default function EventPage() {
+export default function EventPage( {favoritesData, setFavoritesData}) {
     const [eventPageData, setEventPageData] = useState({})
     document.title = `${eventPageData.name}`
 
@@ -21,6 +23,16 @@ export default function EventPage() {
 
     if (!eventPageData.name) return null
     else {
+        let favoriteIds = favoritesData.map(event=>event.id)
+        function favoriteEvent(){
+            setFavoritesData([...favoritesData,eventPageData])
+            }
+            let inFavorites = favoriteIds.includes(eventPageData.id)
+            function unFavoriteEvent(){
+                let filtedFavorites = favoritesData.filter(fav => fav.id !== eventPageData.id)
+                setFavoritesData(filtedFavorites)
+            }
+
         let name = eventPageData.name
         // Image
         let image = eventPageData.images[0].url
@@ -120,6 +132,8 @@ export default function EventPage() {
                         <div className="eventPageButtons">
                             <button className='eventPageButton' onClick={clickSeatMapButton} disabled={!seatMap}>View Seat Map</button>
                             <button className='eventPageButton' onClick={clickTicketsButton} disabled={!tickets}>Buy Tickets</button>
+                            { inFavorites ? <img src={redheart} alt='' className="eventButtonHeart" onClick={unFavoriteEvent} /> :<img src={emptyheart} alt='' className="eventButtonHeart unfavorited" onClick={favoriteEvent}/>}
+
                         </div>
                     </div>
                 </div>

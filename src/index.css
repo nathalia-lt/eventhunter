@@ -503,7 +503,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 16%;
 }
 .eventPageButtons button {
   transition: 0.5s;
