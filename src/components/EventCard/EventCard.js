@@ -46,7 +46,7 @@ export default function EventCard({ event, favoriteEvent, unFavoriteEvent, inFav
 
     }
 
-        //location
+    //location
 
     let location;
     let state;
@@ -86,11 +86,6 @@ export default function EventCard({ event, favoriteEvent, unFavoriteEvent, inFav
     function HandleButtonClick() {
         navigate('/event/'+ id) //when we click on this button is going to send to the page event/ with the especific ID of the event
     }
-
-//----------------------------------------
-
-
-
 
 
     return (

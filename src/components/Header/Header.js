@@ -15,9 +15,9 @@ function aboutClick(){
 function favoritesClick(){
     navigate('/favorites')
 }
- function profileClick(){
+function profileClick(){
     setShowProfileMenu(!showProfileMenu)
- }
+}
 
 
 function titleClick(){

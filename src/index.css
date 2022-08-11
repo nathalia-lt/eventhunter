@@ -206,6 +206,7 @@
   margin-left: 39vw;
   font-size: 18px;
   width: 80px;
+  cursor: pointer;
   background: url("./searchicon.png") right no-repeat;
   border: none;
   color: transparent;

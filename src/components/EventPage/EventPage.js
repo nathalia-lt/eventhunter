@@ -181,9 +181,6 @@ export default function EventPage() {
 //     //-----------------------------------------------------------------------
 
 
-
-
-
 //     if (!eventPageData.name) return null //it always have to be above the return. If there is no data it shows null. it is going to show a blank page if there is no data
 //     return (
 //         <div className='eventPage'>

@@ -99,21 +99,19 @@ $widthRight : calc($width/1.6);
 }
 
 .extraGenres {
-    // margin-top: %;
     display: flex;
     flex-direction: row;
     transform: scale(0.9);
-     div {
+    div {
         margin-top: -10%;
         margin-left: -7% !important;
         margin-right: 15%;
-     }
+    }
 }
 
 
 .eventPageButtons {
     @include s.flexCenter(row);
-    //color: s.$text;
     margin-top: 10%;
 
     button {
@@ -150,5 +148,4 @@ $widthRight : calc($width/1.6);
     margin-right: 5%;
     border-radius: 5px;
     border: none;
-    //color: s.$text;
 }

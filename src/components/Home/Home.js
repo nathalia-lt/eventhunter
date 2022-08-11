@@ -16,7 +16,6 @@ setEventData={setEventData}
 /> : null
 
 
-
     return(
         <div> 
             <Filter

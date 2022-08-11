@@ -27,9 +27,6 @@ let [eventData, setEventData] = useState([])
 let [favoritesData, setFavoritesData] = useState([])
 
 
-
-
-
   return (
   <div> 
     {/* anything we put up here will display in all the pages no matter what. The same thing apply below the routes as well */}
