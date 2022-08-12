@@ -17,7 +17,7 @@ A webpage that utilizes a Ticketmaster API to provide information about events h
 
 
 # Demo:
- <img src='demo.gif' width='' />
+ <img src='eventhunter.gif' width='' />
 
 
  #
