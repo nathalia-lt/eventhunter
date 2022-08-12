@@ -44,6 +44,6 @@ A webpage that utilizes a Ticketmaster API to provide information about events h
 
 ```
 // install and start the frontend interface
-npm install --prefix client
-npm start --prefix client 
+npm install 
+npm start 
 ```
