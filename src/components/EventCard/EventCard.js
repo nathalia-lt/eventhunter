@@ -7,7 +7,7 @@ export default function EventCard({ event, favoriteEvent, unFavoriteEvent, inFav
 
     let image = event.images[0].url
     //console.log(image)
-    let name = event.name
+    let name = event.name.length > 30 ? event.name.slice(0,30) + '...' : event.name
     //Date
     let day;
     let time;
@@ -95,7 +95,7 @@ export default function EventCard({ event, favoriteEvent, unFavoriteEvent, inFav
                 <div className='eventInfo'>
                     <div className={genreClass} > {genre} </div>
                     {/* a className can also be a variable, that will change depends on the event data */}
-                    <div className='eventName' >{event.name} </div>
+                    <div className='eventName' >{name} </div>
                     <div className='eventDate'> {eventDateAndTime} </div>
                     <div className='eventLocation'>
                         {/* <img src='https://img.icons8.com/ios/50/000000/marker--v1.png' /> */}
