@@ -1,5 +1,5 @@
 
-# EventHunter 
+# <img src='eventhunter.png' width='400px' /> 
 
 A webpage that utilizes a Ticketmaster API to provide information about events happening in the United States.
 
