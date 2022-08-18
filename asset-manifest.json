@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/eventhunter/static/css/main.030e8ab1.css",
-    "main.js": "/eventhunter/static/js/main.06e8a6bf.js",
+    "main.js": "/eventhunter/static/js/main.99a8152e.js",
     "index.html": "/eventhunter/index.html",
     "main.030e8ab1.css.map": "/eventhunter/static/css/main.030e8ab1.css.map",
-    "main.06e8a6bf.js.map": "/eventhunter/static/js/main.06e8a6bf.js.map"
+    "main.99a8152e.js.map": "/eventhunter/static/js/main.99a8152e.js.map"
   },
   "entrypoints": [
     "static/css/main.030e8ab1.css",
-    "static/js/main.06e8a6bf.js"
+    "static/js/main.99a8152e.js"
   ]
 }
