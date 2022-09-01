@@ -43,10 +43,7 @@ A webpage that utilizes a Ticketmaster API to provide information about events h
 * Run the following commands in two seperate terminals:
 
 ```
-// install and start the server
-bundle install
-rails s 
-\
+// install and start the frontend interface
+npm install 
+npm start 
 ```
-
-
