@@ -3,7 +3,7 @@
 
 A webpage that utilizes a Ticketmaster API to provide information about events happening in the United States.
 
-* Search for an specific event
+* Search for any specific event
 * Save favourites events
 * Get links to buy tickets
 
@@ -43,7 +43,10 @@ A webpage that utilizes a Ticketmaster API to provide information about events h
 * Run the following commands in two seperate terminals:
 
 ```
-// install and start the frontend interface
-npm install 
-npm start 
+// install and start the server
+bundle install
+rails s 
+\
 ```
+
+
